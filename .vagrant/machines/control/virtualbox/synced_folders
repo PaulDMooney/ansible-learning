@@ -1,1 +1,0 @@
-{"virtualbox":{"/ansible/src":{"guestpath":"/ansible/src","hostpath":"C:/dev/training/ansible-learning/src","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/dev/training/ansible-learning","disabled":false,"__vagrantfile":true}}}
