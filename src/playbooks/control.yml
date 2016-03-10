@@ -2,8 +2,16 @@
   - hosts: control
     become: true
     tasks:
-      - name: install tools
+      - name: install tools for Ubuntu
         apt: name={{item}} state=present update_cache=true
         with_items:
           - curl
           - python-httplib2
+      #   when: ansible_distribution == 'Ubuntu'
+      #
+      # - name: install tools for CentOS
+      #   yum: name={{item}} state=present update_cache=true
+      #   with_items:
+      #     - curl
+      #     - python-httplib2
+      #   when: ansible_distribution == 'CentOS'

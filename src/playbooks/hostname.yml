@@ -3,3 +3,9 @@
     tasks:
       - name: get server hostname
         command: hostname
+      #   register: hostname_result
+      # - debug: var=hostname_result
+      #
+      # - name: find control machine
+      #   shell: echo {{ hostname_result }}
+      #   when: hostname_result.stdout == 'control'
